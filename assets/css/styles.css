@@ -26,7 +26,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 ul {
@@ -107,7 +106,6 @@ nav ul li {
   height: 100%;
   width: 100%;
   margin: 0.5rem;
-  border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -130,23 +128,50 @@ nav ul li {
 
 }
 
+/* || WHITE BKG */
+.sbeWhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  max-width: 75rem;
+  height: 5rem;
+  background-color: white;
+  margin: -1rem auto;
+}
+
+/* || SBE */
+.sbe {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0rem;
+  z-index: -2;
+  max-width: 75rem;
+  height: 40rem;
+  margin: -25rem auto;
+  background-color: black;
+  padding: 1rem 1rem;
+}
+
 /* || ABOUT ME SECTION */
 .more-about {
-  /* display: flex; */
+  z-index: 1;
   align-items: center;
   justify-content: center;
   max-width: 75rem;
-  margin: 2rem auto;
+  margin: 8rem auto;
   background-color: var(--bg-color);
   padding: 1rem 1rem;
-  border-radius: 6px;
+  border: 4px solid black;
   box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
 }
 
 .more-h2{
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: var(--bottom-margin);
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
 
 }
@@ -160,93 +185,144 @@ nav ul li {
 }
 
 
-
- /* || SKILLS SECTION */
-.skills{
+/* || QUALIFICATIONS */
+.quals{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
   max-width: 68.75rem;
+  margin: -6rem auto 5rem;
+ }
+
+ .quals img{
+  /* height: 37rem;
+  width: 27rem; */
+  margin: .5rem;
+  /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
+ }
+ 
+ .qualBio{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  background-color: var(--secondary-color);
+  color: white;
+ }
+
+ .qualBio h1{
+  margin-bottom: var(--bottom-margin);
+ }
+
+ .qualBio p{
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  font-weight: normal;
+  font-size: large;
+ }
+
+
+
+ /* || LESSONS SECTION */
+.lessons{
+  max-width: 75rem;
+  height: auto;
   margin: 4rem auto;
   text-align: center;
-  margin-top: 2rem;
+  z-index: -1;
 }
 
-.skill-header{
-  margin-bottom: 1rem;
-  font-size: 2rem;
-
-}
-
-.skills-wrapper img{
-  padding: 1.25rem;
+.lessons-container{
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
-.img-container{
-display: flex;
-justify-content: center;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-}
-
-.rep-container{
-  display: flex;
-  justify-content: center;
-}
-
-.icon,
-.icon-rep{
-  background-color: #fff;
-  width: 11.875rem;
-  height: 11.25rem;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
-.icon-rep{
+.lesson, .lesson-grey,
+.lesson-red{
+  z-index: 0;
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
-
-.rep-cpp{
-  background-color: #28a3d4;
-}
-
-.rep-git{
-  background-color: #f4511e;
-}
-
-.rep-js{
-  background-color: #ffd600;
+  width: 25rem;
+  height: 8rem;
+  border: 20px solid white;
+  background-color: white;
   color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 20px;
+  margin: -10px 10px 10px 10px;
 }
 
-.rep-html{
-  background-color: #ff6d00;
+.lesson-grey{
+  margin: -10px 10px 0px 10px;
+  border: 20px solid grey;
+  background-color: grey;
 }
 
-.rep-css{
-  background-color: #039be5;  
+.lesson-red{
+  margin: -10px 10px 15px 10px;
+  border: 20px solid var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
-.icon:hover,
-.icon-rep:hover{
-  opacity: 0;
-  transition: .3s;
+/* || BLACK BOX */
+
+.blackBox {
+  position: sticky;
+  top: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  height: 24rem;
+  background-color: white;
+  margin: -24rem auto;
+  z-index: 0;
+}
+
+/* || STUDIO POLICY SECTION */
+.studio-policy {
+  position:relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 26rem auto 0;
+  background-color: var(--bg-color);
+  padding: 1rem 1rem;
+  border: 4px solid black;
+  box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+}
+
+.policy-h2{
+  margin-bottom: var(--bottom-margin);
+  text-align: left;
+  font-size: 2rem;
+}
+
+.studio-policy h3{
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.studio-policy p{
+  line-height: var(--line-height);
+  padding: .75rem;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
 
-/* || PROJECTS SECTION */
+/* || VIDEO & PROJECTS SECTION */
 .projects{
+  position:relative;
   background-color: var(--bg-color);
   padding: 32px 0;
-  margin-top: -3rem;
+  margin-top: 5rem;
   margin-bottom: var(--bottom-margin);
 }
 
@@ -265,6 +341,7 @@ width: 100%;
   text-align: center;
   margin-bottom: 1rem;
   font-size: 2rem;
+  /* color: white; */
 }
 
 .project-container {
@@ -290,10 +367,9 @@ width: 100%;
 }
 
 .project-card{
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 10px 10px 2px 10px;
   margin: 10px;
 }
 
@@ -305,7 +381,9 @@ width: 100%;
 
 /* || CONTACT SECTION */
 .contact{
+  position:relative;
   margin-top: 2rem;
+  z-index: 3;
 }
 
 .contact h2{
@@ -414,7 +492,7 @@ footer{
 }
 
 /* || DARK MODE TOGGLE */
-.darkmode {
+/* .darkmode {
   position: fixed;
   right: 1%;
   bottom: 1%;
@@ -490,7 +568,7 @@ footer{
 .dark-mode input:checked + body{
   background-color:#1f1f1f;
   color: #fff;
-}
+} */
 
 
 /* || MEDIA QUERYS */

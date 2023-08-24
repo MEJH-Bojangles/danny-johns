@@ -28,7 +28,7 @@
       <h1>Danny Johns</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#skills" class="nav-link">Lessons</a></li>
         <li><a href="#projects" class="nav-link">Videos</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -49,10 +49,20 @@
       </div>
     </section>
 
+    <div class="sbeWhite"></div>
+
+  <!-- STICKY Background Element -->    
+  <section class = "sbe">
+    <div
+    loading="lazy"
+    class="sbe"></div>
+  </section>
+
   <!-- More about -->
-  <h2 class="more-h2" id="about">A Lil' Ditty About Me</h>
 
     <section class= "more-about">
+      <h2 class="more-h2" id="about">A Lil' Ditty About Me</h>
+
       <p class="first-p">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deserunt sequi unde dolor dolore, consequatur illum, a aperiam dignissimos expedita cupiditate voluptas adipisci amet! Fugit voluptatum quidem expedita debitis obcaecati.      </p>
       <p>
@@ -64,62 +74,66 @@
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione in harum culpa voluptas esse enim soluta sapiente animi nihil quidem voluptate vel libero tempore! Alias atque libero ipsum laborum?      </p>
       </section>
+      
 
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-          <h2 class="skill-header">My Top Skills</h2>
-    
-          <div class="skills-wrapper">
-    
-            <div class="first-set animate__animated animate__pulse">
-              
-              <div class="img-container">
 
-                <img 
-                src="assets/icons/icons8-c++.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-cpp"/>
-
-                <img 
-                src="assets/icons/icons8-git.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-git"/>
-
-                <img 
-                src="assets/icons/icons8-javascript.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-js"/>
-
-                <img 
-                src="assets/icons/icons8-html-5.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-html"/>
-    
-                <img 
-                src="assets/icons/icons8-css3.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-css"/>
-
-              </div>
-
-              <div class="rep-container">
-                <div class="icon-rep rep-cpp">C++</div>
-                <div class="icon-rep rep-git">Git</div>
-                <div class="icon-rep rep-js">JavaScript</div>
-                <div class="icon-rep rep-html">HTML</div>
-                <div class="icon-rep rep-css">CSS</div>
-              </div>
-
-            </div>
-    
-          </div>
-    
+        <!-- Qualifications -->
+    <section class = "quals">
+      <img
+      src="assets/images/logo-light-text.png"
+      alt="Berklee College of Music"
+      loading="lazy"
+      class="quals-img"/>
+      <div class="qualBio animate__animated animate__shakeX">
+        <h2 class="qualBio-title">Qualifications</h2>
+        <p class="qualBio-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quas. Provident, debitis. Aut cum soluta facere unde harum reprehenderit placeat itaque. Assumenda porro perspiciatis vero cupiditate quos animi praesentium asperiores?
+        </p>
+      </div>
     </section>
+
+  
+
+    <!-- Lessons & Studio Policy -->
+    <section class="lessons" id="skills">               
+              <div class="lessons-container">
+                <div class="lesson">Rockstar <br> Lessons</div>
+                <div class="lesson">Superstar <br> Lessons</div>
+              </div>
+
+              <div class="lessons-container">
+                <div class="lesson-grey">30 min <br> $35</div>
+                <div class="lesson-grey">60 min <br> $60</div>
+              </div>
+
+              <div class="lessons-container">
+                <div class="lesson-red">Bundle - $120 <br> 4x 30 min each</div>
+                <div class="lesson-red">Bundle - $220 <br> 4x 60 min each</div>
+              </div>
+
+              <div loading="lazy" class="blackBox"></div>
+
+                    <!-- Studio Policy -->
+    <div class= "studio-policy">
+      <h2 class="policy-h2" id="">Studio Policy</h>
+
+      <p class="first-p"> Danny’s drum studio always tries to provide a high quality enjoyable lesson environment.  To insure that everyone is getting the most out of their time the following policy is in place:
+      </p>
+      <h3>Attendance:</h3>
+      <p> Regular attendance is expected.  Please give 24 hours notice if you know you will miss a lesson and I will provide a video lesson if a make up is not possible, if notice is not given the lesson fee will be collected and no make up will be given.
+      </p>
+      <h3>Practice:</h3>
+      <p> Students are expected to practice each week.  I understand that life happens and some weeks can be hard to get the time in, that is okay!  But if I see a continued pattern of not practicing we will discuss how to proceed.
+      </p>
+      <h3>Payment:</h3>
+      <p> All payments are expected ….</p>
+      </div>
+
+    </section>
+
+
+
+
 
     <!-- Projects section -->
     <section class="projects" id="projects">
@@ -237,12 +251,12 @@
     </i>
 
 <!-- Dark Mode Toggle -->
-  <div class="darkmode">
+  <!-- <div class="darkmode">
     <input type="checkbox" id="darkmode-toggle" />
     <label for="darkmode-toggle">
       <svg class="sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 16.584V18.9996C10 20.1042 10.8954 20.9996 12 20.9996C13.1046 20.9996 14 20.1042 14 18.9996L14 16.584M12 3V4M18.3643 5.63574L17.6572 6.34285M5.63574 5.63574L6.34285 6.34285M4 12H3M21 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    
       <svg class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0174 2.80157C6.37072 3.29221 2.75 7.22328 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C16.7767 21.25 20.7078 17.6293 21.1984 12.9826C19.8717 14.6669 17.8126 15.75 15.5 15.75C11.4959 15.75 8.25 12.5041 8.25 8.5C8.25 6.18738 9.33315 4.1283 11.0174 2.80157ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C12.7166 1.25 13.0754 1.82126 13.1368 2.27627C13.196 2.71398 13.0342 3.27065 12.531 3.57467C10.8627 4.5828 9.75 6.41182 9.75 8.5C9.75 11.6756 12.3244 14.25 15.5 14.25C17.5882 14.25 19.4172 13.1373 20.4253 11.469C20.7293 10.9658 21.286 10.804 21.7237 10.8632C22.1787 10.9246 22.75 11.2834 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12Z" fill="#ffffff"></path> </g></svg>  </label>
-  </div>
+  </div> -->
 
 
 
